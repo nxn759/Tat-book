@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tat-Book | Diseño Personalizado</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg tat-navbar fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand logo" href="index.html">Tat-Book<span>✦</span></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Tatuadores</a></li>
+                <li class="nav-item"><a class="nav-link" href="estilos.html">Estilos</a></li>
+                <li class="nav-item"><a class="nav-link active" href="personalizado.html">Diseño Personalizado</a></li>
+                <li class="nav-item"><a class="nav-link" href="cuidados.html">Cuidados</a></li>
+                <li class="nav-item"><a class="nav-link" href="estudios.html">Estudios Cercanos</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- PORTADA -->
+<header class="hero">
+    <div class="container hero-content">
+
+        <span class="eyebrow">TU IDEA, TU DISEÑO</span>
+
+        <h1>Diseña algo<br><span>único.</span></h1>
+
+        <p>
+            Cada tatuaje cuenta una historia. Describe tu idea,
+            selecciona el estilo que te gusta y encuentra un artista
+            que pueda ayudarte a hacerla realidad.
+        </p>
+
+        <a href="#formulario" class="btn btn-neon">
+            Comenzar solicitud
+        </a>
+
+    </div>
+</header>
+
+
+<!-- FORMULARIO -->
+<section class="section-padding" id="formulario">
+
+    <div class="container">
+
+        <div class="row g-5 align-items-start">
+
+            <div class="col-lg-5">
+
+                <span class="eyebrow">SOLICITA TU DISEÑO</span>
+
+                <h2 class="section-title">
+                    Cuéntanos tu <span>idea</span>
+                </h2>
+
+                <form id="designForm" class="needs-validation" novalidate></form>
+
+                <p class="section-description">
+                    Completa el formulario con los detalles de tu tatuaje.
+                    Así el artista podrá conocer mejor lo que estás buscando.
+                </p>
+
+                <div class="info-card mt-4">
+
+                    <i class="bi bi-lightbulb info-icon"></i>
+
+                    <h3>Una idea, muchas posibilidades</h3>
+
+                    <p>
+                        Puedes describir una imagen, un símbolo, una frase
+                        o cualquier concepto que quieras convertir en tatuaje.
+                    </p>
+
+                </div>
+
+                <div class="info-card mt-4">
+
+                    <i class="bi bi-person-check info-icon"></i>
+
+                    <h3>Encuentra a tu artista</h3>
+
+                    <p>
+                        Selecciona un tatuador de nuestra lista para relacionar
+                        tu solicitud con el estilo que buscas.
+                    </p>
+
+                    <a href="index.html" class="btn btn-cyan mt-2">
+                        Conocer tatuadores
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULARIO DE SOLICITUD -->
+            <div class="col-lg-7">
+
+                <div class="form-panel">
+
+                    <h2 class="section-title fs-2 mb-4">
+                        Solicitud de <span>diseño</span>
+                    </h2>
+
+                    <form id="designForm" class="needs-validation" novalidate>
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="clientName">Nombre completo *</label>
+                                <input type="text" class="form-control" id="clientName" placeholder="Escribe tu nombre" required>
+                                <div class="invalid-feedback">Ingresa tu nombre.</div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="clientEmail">Correo electrónico *</label>
+                                <input type="email" class="form-control" id="clientEmail" placeholder="correo@ejemplo.com" required>
+                                <div class="invalid-feedback">Ingresa un correo válido.</div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="designStyle">Estilo de tatuaje *</label>
+
+                                <select class="form-select" id="designStyle" required>
+                                    <option value="">Selecciona un estilo</option>
+                                    <option>Tradicional</option>
+                                    <option>Neotradicional</option>
+                                    <option>Blackwork</option>
+                                    <option>Tribal</option>
+                                    <option>Ornamental</option>
+                                    <option>Fine Line</option>
+                                    <option>Realismo</option>
+                                    <option>Japonés</option>
+                                    <option>Acuarela</option>
+                                    <option>New School</option>
+                                    <option>Bordado</option>
+                                    <option>Black & Grey</option>
+                                </select>
+
+                                <div class="invalid-feedback">Selecciona un estilo.</div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="designArtist">Tatuador de preferencia</label>
+
+                                <select class="form-select" id="designArtist">
+                                    <option value="">Sin preferencia</option>
+                                    <option>Alex Ramírez</option>
+                                    <option>Sofía Chen</option>
+                                    <option>Dmitri Volkov</option>
+                                    <option>Valeria Torres</option>
+                                    <option>Daniel Cruz</option>
+                                    <option>Mariana López</option>
+                                    <option>Ethan Miller</option>
+                                    <option>Camila Reyes</option>
+                                </select>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="bodyZone">Zona del cuerpo *</label>
+
+                                <select class="form-select" id="bodyZone" required>
+                                    <option value="">Selecciona una zona</option>
+                                    <option>Brazo</option>
+                                    <option>Antebrazo</option>
+                                    <option>Espalda</option>
+                                    <option>Pierna</option>
+                                    <option>Muslo</option>
+                                    <option>Mano</option>
+                                    <option>Muñeca</option>
+                                    <option>Cuello</option>
+                                    <option>Pecho</option>
+                                    <option>Costillas</option>
+                                    <option>Otra</option>
+                                </select>
+
+                                <div class="invalid-feedback">Selecciona una zona.</div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label class="form-label" for="designSize">Tamaño aproximado *</label>
+
+                                <select class="form-select" id="designSize" required>
+                                    <option value="">Selecciona el tamaño</option>
+                                    <option>Pequeño (1 a 5 cm)</option>
+                                    <option>Mediano (6 a 15 cm)</option>
+                                    <option>Grande (16 a 25 cm)</option>
+                                    <option>Muy grande (más de 25 cm)</option>
+                                </select>
+
+                                <div class="invalid-feedback">Selecciona un tamaño.</div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <label class="form-label" for="designDescription">Describe tu idea *</label>
+
+                                <textarea class="form-control" id="designDescription" rows="5" placeholder="Describe cómo imaginas tu tatuaje, qué elementos quieres incluir y otros detalles..." required></textarea>
+
+                                <div class="invalid-feedback">Describe tu diseño.</div>
+                            </div>
+
+
+                            <div class="col-12">
+                                <label class="form-label" for="designReference">Enlace de imagen de referencia (opcional)</label>
+
+                                <input type="url" class="form-control" id="designReference" placeholder="https://ejemplo.com/imagen">
+                            </div>
+
+
+                            <div class="col-12 mt-4">
+
+                                <button type="submit" class="btn btn-neon w-100">
+                                    Enviar solicitud <i class="bi bi-arrow-right"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                    <div id="formMessage" class="mt-3" aria-live="polite"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-5">
+                <a class="logo" href="index.html">Tat-Book<span>✦</span></a>
+                <p class="mt-3">Tu idea merece convertirse en un diseño único.</p>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Explorar</h4>
+                <a href="index.html">Tatuadores</a><br>
+                <a href="estilos.html">Estilos</a><br>
+                <a href="personalizado.html">Diseño personalizado</a>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Información</h4>
+                <a href="cuidados.html">Cuidados</a><br>
+                <a href="estudios.html">Estudios cercanos</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom text-center">
+            © 2026 Tat-Book | Todos los derechos reservados.
+        </div>
+
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

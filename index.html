@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tat-Book | Tatuadores</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="author" content="Nancy Pérez Hernández"/>
+    <meta name="copyright" content="© 2024 Nancy Pérez Hernandez"/>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg tat-navbar fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="index.html">
+
+    <img
+        src="logo-tatbook.jpg"
+        alt="Logo de Tat-Book"
+        class="logo-tatbook"
+    >
+
+    <span>
+        <<span class="text-secondary">TAT-BOOK</span>
+    </span>
+
+</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Tatuadores</a></li>
+                <li class="nav-item"><a class="nav-link" href="estilos.html">Estilos</a></li>
+                <li class="nav-item"><a class="nav-link" href="personalizado.html">Diseño Personalizado</a></li>
+                <li class="nav-item"><a class="nav-link" href="cuidados.html">Cuidados</a></li>
+                <li class="nav-item"><a class="nav-link" href="estudios.html">Estudios Cercanos</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- PORTADA -->
+<header class="hero">
+    <div class="container hero-content">
+
+        <span class="eyebrow">ENCUENTRA TU PRÓXIMO TATUAJE</span>
+
+        <h1>Tu piel.<br><span>Tu historia.</span></h1>
+
+        <p>
+            Encuentra artistas, descubre estilos y convierte tus ideas
+            en diseños únicos. En Tat-Book conectamos tu creatividad
+            con tatuadores que comparten tu estilo.
+        </p>
+
+        <a href="#tatuadores" class="btn btn-neon me-2">
+            Explorar tatuadores
+        </a>
+
+        <a href="estilos.html" class="btn btn-cyan">
+            Conocer estilos
+        </a>
+
+    </div>
+</header>
+
+
+<!-- TATUADORES -->
+<section class="section-padding" id="tatuadores">
+
+    <div class="container">
+
+        <div class="mb-5">
+            <span class="eyebrow">CONOCE A LOS ARTISTAS</span>
+
+            <h2 class="section-title">
+                Encuentra tu <span>tatuador</span>
+            </h2>
+
+            <p class="section-description">
+                Conoce a nuestros artistas, explora sus trabajos
+                y encuentra al profesional que mejor se adapte
+                a la idea que tienes en mente.
+            </p>
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- TATUADOR 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="artist-card">
+                    <img src="https://i.pinimg.com/736x/45/54/5d/45545d325c0ffaa1e152cb41c129fb2b.jpg" alt="Trabajo de tatuaje de Alex">
+                    <div class="artist-body">
+                        <h3>Alex Ramírez</h3>
+                        <span class="artist-specialty">Fine Line / Blackwork</span>
+                        <p>Especialista en líneas delicadas, símbolos y diseños minimalistas.</p>
+                        <span class="tag">Fine Line</span>
+                        <span class="tag">Blackwork</span>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-neon profile-btn" data-artist="Alex Ramírez">Ver perfil</button>
+                            <a href="personalizado.html?artista=Alex%20Ram%C3%ADrez" class="btn btn-cyan">Solicitar diseño</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TATUADOR 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="artist-card">
+                    <img src="https://cdn.tattooswizard.com/artists/5e319d6b695b52c80f310ba3/tattoos/6314bc677b06f163084154a8" alt="Trabajo de tatuaje de Sofia">
+                    <div class="artist-body">
+                        <h3>Sofía Chen</h3>
+                        <span class="artist-specialty">Realismo / Black & Grey</span>
+                        <p>Trabaja retratos y diseños detallados con sombras y profundidad.</p>
+                        <span class="tag">Realismo</span>
+                        <span class="tag">Black & Grey</span>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-neon profile-btn" data-artist="Sofía Chen">Ver perfil</button>
+                            <a href="personalizado.html?artista=Sof%C3%ADa%20Chen" class="btn btn-cyan">Solicitar diseño</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TATUADOR 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="artist-card">
+                    <img src="https://i.pinimg.com/736x/5b/ec/ff/5becff36f6619a0f1c52b2bc87a3b667.jpg" alt="Trabajo de tatuaje de Dmitri">
+                    <div class="artist-body">
+                        <h3>Dmitri Volkov</h3>
+                        <span class="artist-specialty">Blackwork / Tribal</span>
+                        <p>Diseños de tinta negra, contrastes y composiciones abstractas.</p>
+                        <span class="tag">Blackwork</span>
+                        <span class="tag">Tribal</span>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-neon profile-btn" data-artist="Dmitri Volkov">Ver perfil</button>
+                            <a href="personalizado.html?artista=Dmitri%20Volkov" class="btn btn-cyan">Solicitar diseño</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TATUADOR 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="artist-card">
+                    <img src="https://media.wp.tattoox.es/2024/09/30184241/43e0e4a66393753e1da8468be55c03cd-jpg.webp" alt="Trabajo de tatuaje de Valeria">
+                    <div class="artist-body">
+                        <h3>Valeria Torres</h3>
+                        <span class="artist-specialty">Ornamental</span>
+                        <p>Especializada en patrones, simetría y figuras decorativas.</p>
+                        <span class="tag">Ornamental</span>
+                        <span class="tag">Fine Line</span>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-neon profile-btn" data-artist="Valeria Torres">Ver perfil</button>
+                            <a href="personalizado.html?artista=Valeria%20Torres" class="btn btn-cyan">Solicitar diseño</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TATUADOR 5 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="artist-card">
+                    <img src="https://i.pinimg.com/736x/e7/e7/64/e7e764c194fee79caa0a042725b7c3d8.jpg" alt="Trabajo de tatuaje de Daniel">
+                    <div class="artist-body">
+                        <h3>Daniel Cruz</h3>
+                        <span class="artist-specialty">Tradicional</span>
+                        <p>Diseños clásicos con contornos marcados y colores intensos.</p>
+                        <span class="tag">Tradicional</span>
+                        <span class="tag">New School</span>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-neon profile-btn" data-artist="Daniel Cruz">Ver perfil</button>
+                            <a href="personalizado.html?artista=Daniel%20Cruz" class="btn btn-cyan">Solicitar diseño</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TATUADOR 6 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="artist-card">
+                    <img src="https://rcdn.rolloid.net/uploads/2017/03/tatuajes-que-parecen-verdaderas-obras-de-arte-con-acuarelas-1489049173.jpg" alt="Trabajo de tatuaje de Mariana">
+                    <div class="artist-body">
+                        <h3>Mariana López</h3>
+                        <span class="artist-specialty">Acuarela</span>
+                        <p>Utiliza colores y efectos que imitan las pinturas de acuarela.</p>
+                        <span class="tag">Acuarela</span>
+                        <span class="tag">New School</span>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-neon profile-btn" data-artist="Mariana López">Ver perfil</button>
+                            <a href="personalizado.html?artista=Mariana%20L%C3%B3pez" class="btn btn-cyan">Solicitar diseño</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TATUADOR 7 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="artist-card">
+                    <img src="https://inkfactorytatuajes.com/wp-content/uploads/2018/07/japanese.ink_33713030_1870720886566584_2839492605547380736_n.jpg.webp" alt="Trabajo de tatuaje de Ethan">
+                    <div class="artist-body">
+                        <h3>Ethan Miller</h3>
+                        <span class="artist-specialty">Japonés</span>
+                        <p>Inspirado en el arte japonés, sus símbolos y composiciones tradicionales.</p>
+                        <span class="tag">Japonés</span>
+                        <span class="tag">Tradicional</span>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-neon profile-btn" data-artist="Ethan Miller">Ver perfil</button>
+                            <a href="personalizado.html?artista=Ethan%20Miller" class="btn btn-cyan">Solicitar diseño</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- TATUADOR 8 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="artist-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.GBh7Ookg8bUvUab6ob5dqAHaJL?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Trabajo de tatuaje de Camila">
+                    <div class="artist-body">
+                        <h3>Camila Reyes</h3>
+                        <span class="artist-specialty">Neotradicional</span>
+                        <p>Combina elementos clásicos con detalles modernos y creativos.</p>
+                        <span class="tag">Neotradicional</span>
+                        <span class="tag">Bordado</span>
+                        <div class="d-grid gap-2 mt-3">
+                            <button class="btn btn-neon profile-btn" data-artist="Camila Reyes">Ver perfil</button>
+                            <a href="personalizado.html?artista=Camila%20Reyes" class="btn btn-cyan">Solicitar diseño</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- INVITACIÓN -->
+<section class="section-padding section-dark">
+    <div class="container text-center">
+
+        <span class="eyebrow">HAZ REALIDAD TU IDEA</span>
+
+        <h2 class="section-title">
+            ¿Tienes un diseño en <span>mente?</span>
+        </h2>
+
+        <p class="section-description mx-auto mb-4">
+            Cuéntanos qué quieres tatuarte y encuentra un artista
+            que pueda ayudarte a convertir tu idea en realidad.
+        </p>
+
+        <a href="personalizado.html" class="btn btn-neon">
+            Solicitar diseño personalizado
+        </a>
+
+    </div>
+</section>
+
+
+<!-- MODAL DE PERFIL -->
+<div class="modal fade" id="artistModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content artist-modal">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="artistModalTitle">Perfil del artista</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body" id="artistModalBody"></div>
+
+            <div class="modal-footer">
+                <a href="personalizado.html" class="btn btn-neon">Solicitar diseño</a>
+                <button type="button" class="btn btn-cyan" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="row g-4">
+
+            <div class="col-md-5">
+                <a class="logo" href="index.html">Tat-Book<span>✦</span></a>
+                <p class="mt-3">
+                    Conectamos personas con artistas del tatuaje
+                    para convertir ideas en diseños únicos.
+                </p>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Explorar</h4>
+                <a href="index.html">Tatuadores</a><br>
+                <a href="estilos.html">Estilos</a><br>
+                <a href="personalizado.html">Diseño personalizado</a>
+            </div>
+
+            <div class="col-md-4">
+                <h4>Información</h4>
+                <a href="cuidados.html">Cuidados</a><br>
+                <a href="estudios.html">Estudios cercanos</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom text-center">
+            © 2026 Tat-Book | Todos los derechos reservados.
+        </div>
+
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
